@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon test suite">
+    <test name="Test for Amazon regression">
+        <classes>
+            <class name = "qTrip.Tests.TestCase01"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
