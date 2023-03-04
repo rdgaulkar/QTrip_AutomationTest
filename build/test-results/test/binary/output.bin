@@ -1,6 +1,19 @@
 $TC01 - User registration PASSED !!
 TC01 - User login PASSED !!
-.TC02 - VERIFICATION - city search PASSED !!!
-ID count: 1
-count before cancellation: 1
-countAfterCancellation: 0
+TC01 - User logout PASSED !!
+$TC01 - User registration PASSED !!
+TC01 - User login PASSED !!
+.TC02 - VERIFICATION - city search PASSED !!!
+$TC01 - User registration PASSED !!
+TC01 - User login PASSED !!
+.TC02 - VERIFICATION - city search PASSED !!!
+ID count: 1
+Count before cancellation: 1
+Count after cancellation: 0
+$TC01 - User registration PASSED !!
+TC01 - User login PASSED !!
+.TC02 - VERIFICATION - city search PASSED !!!
+.TC02 - VERIFICATION - city search PASSED !!!
+.TC02 - VERIFICATION - city search PASSED !!!
+.TC02 - VERIFICATION - city search PASSED !!!
+.TC02 - VERIFICATION - city search PASSED !!!

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Amazon test suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test for Amazon regression(failed)" verbose="0">
     <classes>
-      <class name="qTrip.Tests.TestCase03">
+      <class name="qTrip.Tests.TestCase02">
         <methods>
-          <include name="testCase03"/>
-          <include name="maximizeWindow"/>
+          <include name="testCase02"/>
           <include name="tearDown"/>
+          <include name="maximizeWindow"/>
         </methods>
-      </class> <!-- qTrip.Tests.TestCase03 -->
+      </class> <!-- qTrip.Tests.TestCase02 -->
     </classes>
   </test> <!-- Test for Amazon regression(failed) -->
 </suite> <!-- Failed suite [Amazon test suite] -->

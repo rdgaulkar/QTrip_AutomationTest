@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="qTrip.Tests.TestCase02" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-04T15:05:02" hostname="INPNR-CRTY593" time="129.832">
+  <properties/>
+  <testcase name="testCase02" classname="qTrip.Tests.TestCase02" time="129.832"/>
+  <system-out><![CDATA[TC01 - User registration PASSED !!
+TC01 - User login PASSED !!
+TC02 - VERIFICATION - city search PASSED !!!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

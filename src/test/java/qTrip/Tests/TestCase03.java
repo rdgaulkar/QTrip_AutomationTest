@@ -23,6 +23,7 @@ public class TestCase03 {
         UserRegisterationPage regPage = new UserRegisterationPage(driver);
         regPage.navigateToRegisterationPage();
         regPage.registerUser();
+
         // Login User
         UserLoginPage login = new UserLoginPage(driver);
         login.navigateToLoginPage();
@@ -32,6 +33,7 @@ public class TestCase03 {
         HomePage home = new HomePage(driver);
         home.navigateToHomePage();
         home.searchCity("Bangkok");
+
         // Selecting adventure
         ExploreAdventurePage advPage = new ExploreAdventurePage(driver);
         advPage.select_Duration("");
@@ -48,8 +50,8 @@ public class TestCase03 {
         int IDCounts = history.getTransactionID();
         history.cancelTranslation();
         System.out.println("ID count: "+IDCounts);
-        System.out.println("count before cancellation: "+booking.count);
-        System.out.println("countAfterCancellation: "+history.countAfterCancellation);
+        System.out.println("Count before cancellation: "+booking.count);
+        System.out.println("Count after cancellation: "+history.countAfterCancellation);
         Assert.assertTrue(history.countAfterCancellation == IDCounts-1, "Transaction verification FAILED !!");
         //SoftAssert softAssert = new SoftAssert();
         //softAssert.assertTrue(history.getTransactionID() == booking.count, "SOFT ASSERT - Reservation count failed");
