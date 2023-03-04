@@ -1,5 +1,6 @@
 package qTrip.Pages;
 
+import dev.failsafe.internal.util.Durations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,5 +44,10 @@ public class AdventureBookingPage {
     public void navigateToHistoryPage(){
         WebElement reservationButton = driver.findElement(By.xpath("//a[contains(text(),'Reservations')]"));
         reservationButton.click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

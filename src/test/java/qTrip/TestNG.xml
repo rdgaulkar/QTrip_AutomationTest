@@ -3,7 +3,7 @@
 <suite name="Amazon test suite">
     <test name="Test for Amazon regression">
         <classes>
-            <class name = "qTrip.Tests.TestCase01"></class>
+            <class name = "qTrip.Tests.TestCase03"></class>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

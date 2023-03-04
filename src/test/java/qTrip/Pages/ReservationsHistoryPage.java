@@ -21,11 +21,10 @@ public class ReservationsHistoryPage {
 
     public int getTransactionID(){
         List<WebElement> transactionIDs = driver.findElements(By.xpath("//tbody/tr/th"));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //List<WebElement> transactionIDs = driver.findElements(By.xpath("//a[contains(text(),'Visit Adventure')]"));
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3000));
+        //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[contains(text(),'Visit Adventure')]"))));
+        System.out.println("***"+transactionIDs.size());
         return transactionIDs.size();
     }
 
