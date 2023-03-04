@@ -13,6 +13,7 @@ public class ReservationsHistoryPage {
     WebDriver driver;
     public ReservationsHistoryPage(WebDriver driver){this.driver = driver;}
     String reservationPage_URL = "https://qtripdynamic-qa-frontend.vercel.app/pages/adventures/reservations/index.html";
+    public int countAfterCancellation = 0;
 
     public void navigateToReservationPage(){
         if(driver.getCurrentUrl() != reservationPage_URL)
@@ -24,13 +25,11 @@ public class ReservationsHistoryPage {
         //List<WebElement> transactionIDs = driver.findElements(By.xpath("//a[contains(text(),'Visit Adventure')]"));
         //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3000));
         //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[contains(text(),'Visit Adventure')]"))));
-        System.out.println("***"+transactionIDs.size());
         return transactionIDs.size();
     }
 
     public void cancelTranslation(){
         WebElement cancelButton = driver.findElement(By.xpath("//button[contains(text(),'Cancel')]"));
-        //WebElement cancelButton = driver.findElement(By.xpath("//*[@id='1aa1e775e6448743']"));
         cancelButton.click();
 
         while(!cancelButton.isDisplayed()){
@@ -39,5 +38,6 @@ public class ReservationsHistoryPage {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
             wait.until(ExpectedConditions.visibilityOf(cancelButton));
         }
+        countAfterCancellation = new AdventureBookingPage(driver).count;
     }
 }

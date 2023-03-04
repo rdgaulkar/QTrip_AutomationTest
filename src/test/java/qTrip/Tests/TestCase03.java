@@ -45,14 +45,14 @@ public class TestCase03 {
 
         //Checking Transactions
         ReservationsHistoryPage history = new ReservationsHistoryPage(driver);
-        //history.navigateToReservationPage();
         int IDCounts = history.getTransactionID();
-        System.out.println("$$$"+IDCounts);
         history.cancelTranslation();
-        //Hard assert failing sometimes, hence user soft assert.
-        //Assert.assertTrue(history.getTransactionID() == IDCounts-1, "Transaction verification FAILED !!");
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(history.getTransactionID() == booking.count, "SOFT ASSERT - Reservation count failed");
+        System.out.println("ID count: "+IDCounts);
+        System.out.println("count before cancellation: "+booking.count);
+        System.out.println("countAfterCancellation: "+history.countAfterCancellation);
+        Assert.assertTrue(history.countAfterCancellation == IDCounts-1, "Transaction verification FAILED !!");
+        //SoftAssert softAssert = new SoftAssert();
+        //softAssert.assertTrue(history.getTransactionID() == booking.count, "SOFT ASSERT - Reservation count failed");
     }
 
     @AfterClass

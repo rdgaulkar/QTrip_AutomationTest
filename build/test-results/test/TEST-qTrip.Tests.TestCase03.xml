@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="qTrip.Tests.TestCase03" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-04T08:34:42" hostname="INPNR-CRTY593" time="22.949">
+<testsuite name="qTrip.Tests.TestCase03" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-04T14:07:11" hostname="INPNR-CRTY593" time="34.421">
   <properties/>
-  <testcase name="testCase03" classname="qTrip.Tests.TestCase03" time="22.949"/>
+  <testcase name="testCase03" classname="qTrip.Tests.TestCase03" time="34.421"/>
   <system-out><![CDATA[TC01 - User registration PASSED !!
 TC01 - User login PASSED !!
 TC02 - VERIFICATION - city search PASSED !!!
-***1
-$$$1
-***1
+ID count: 1
+count before cancellation: 1
+countAfterCancellation: 0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
